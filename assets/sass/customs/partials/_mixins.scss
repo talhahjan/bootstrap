@@ -1,0 +1,15 @@
+@mixin input-box-shadow() {
+  box-shadow: 0 0 8px 0 var(--bs-primary);
+}
+
+@mixin centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin responsive-img($max-width) {
+  width: 100%;
+  max-width: $max-width;
+  height: auto;
+}

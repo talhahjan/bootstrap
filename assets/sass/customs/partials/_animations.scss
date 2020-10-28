@@ -1,0 +1,18 @@
+/* animation to rotate at 360deg on y axis */
+@keyframes rotation {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(359deg);
+  }
+}
+
+@keyframes lageraize {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1.7);
+  }
+}
