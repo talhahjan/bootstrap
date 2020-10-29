@@ -6,26 +6,27 @@
 @mixin button-variant(
   $background,
   $border,
-  $color: color-contrast($background),
-  $hover-background: if($color == $color-contrast-light, darken($background, 7.5%), lighten($background, 7.5%)),
-  $hover-border: if($color == $color-contrast-light, darken($border, 10%), lighten($border, 5%)),
-  $hover-color: color-contrast($hover-background),
-  $active-background: if($color == $color-contrast-light, darken($background, 10%), lighten($background, 10%)),
+  $color: $light,
+  $hover-background: lighten($background, 10%),
+  $hover-border: darken($border, 2%),
+  $hover-color: darken($light, 5%),
+  $active-background: lighten($background, 10%),
   $active-border: if($color == $color-contrast-light, darken($border, 12.5%), lighten($border, 5%)),
-  $active-color: color-contrast($active-background),
+  $active-color: $light,
   $disabled-background: $background,
   $disabled-border: $border,
   $disabled-color: color-contrast($disabled-background)
 ) {
   color: $color;
-  @include gradient-bg($background);
-  border-color: $border;
-  @include box-shadow($btn-box-shadow);
+background-color: $background;
+  border-color: darken($border, 3%);
+
 
   &:hover {
     color: $hover-color;
-    @include gradient-bg($hover-background);
+   background-color: $hover-background;
     border-color: $hover-border;
+    box-shadow: 0 2px 2px 0 rgba(red($background), green($background), blue($background), 0.14), 0 3px 1px -2px rgba(red($background), green($background), blue($background), 0.2), 0 1px 5px 0 rgba(red($background), green($background), blue($background), 0.12);
   }
 
   .btn-check:focus + &,
@@ -74,17 +75,17 @@
 
 @mixin button-outline-variant(
   $color,
-  $color-hover: color-contrast($color),
+  $color-hover: $light,
   $active-background: $color,
-  $active-border: $color,
-  $active-color: color-contrast($active-background)
+  $active-border: darken($color, 4%),
+  $active-color: $white,
 ) {
   color: $color;
   border-color: $color;
 
   &:hover {
     color: $color-hover;
-    background-color: $active-background;
+    background-color: $color;
     border-color: $active-border;
   }
 

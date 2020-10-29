@@ -7,8 +7,13 @@
   font-family: $btn-font-family;
   font-weight: $btn-font-weight;
   line-height: $btn-line-height;
-  color: $body-color;
+  color: $light;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
   text-decoration: if($link-decoration == none, null, none);
   white-space: $btn-white-space;
   vertical-align: middle;
@@ -17,7 +22,8 @@
   background-color: transparent;
   border: $btn-border-width solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
-  @include transition($btn-transition);
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: box-shadow, transform;
 
   &:hover {
     color: $light;
