@@ -1,9 +1,12 @@
-@mixin alert-variant($background, $border, $color) {
-  color: $color;
-  @include gradient-bg($background);
-  border-color: $border;
+@mixin alert-variant($background, $darkerBg, $color) {
+color: $color;
+background-color: rgb(red($background),green($background),blue($background));
+background: linear-gradient(180deg, rgba(red($background), green($background), blue($background), 4) 50%, rgba(red($darkerBg), green($darkerBg), blue($darkerBg), 1) 55%);
+border-color: darken($background, 5%);
 
   .alert-link {
     color: darken($color, 10%);
   }
 }
+
+

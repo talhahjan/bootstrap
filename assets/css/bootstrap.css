@@ -3431,7 +3431,7 @@ progress {
   padding: 1rem 1rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.25rem; }
+  border-radius: 3px; }
 
 .alert-heading {
   color: inherit; }
@@ -3448,60 +3448,68 @@ progress {
     padding: 1.25rem 1rem; }
 
 .alert-primary {
-  color: #854f00;
-  background-color: #ffeacc;
-  border-color: #ffe2b8; }
+  color: #fff;
+  background-color: #ff9800;
+  background: linear-gradient(180deg, #ff9800 50%, #f08f00 55%);
+  border-color: #e68900; }
   .alert-primary .alert-link {
-    color: #523100; }
+    color: #e6e6e6; }
 
 .alert-secondary {
-  color: #51145c;
-  background-color: #ebd4ef;
-  border-color: #e3c3e9; }
+  color: #fff;
+  background-color: #9c27b0;
+  background: linear-gradient(180deg, #9c27b0 50%, #9124a3 55%);
+  border-color: #89229b; }
   .alert-secondary .alert-link {
-    color: #2c0b32; }
+    color: #e6e6e6; }
 
 .alert-success {
-  color: #285b2a;
-  background-color: #dbefdc;
-  border-color: #cde9ce; }
+  color: #fff;
+  background-color: #4caf50;
+  background: linear-gradient(180deg, #4caf50 50%, #47a44b 55%);
+  border-color: #449d48; }
   .alert-success .alert-link {
-    color: #18381a; }
+    color: #e6e6e6; }
 
 .alert-info {
-  color: #00626e;
-  background-color: #ccf2f6;
-  border-color: #b8ecf3; }
+  color: #fff;
+  background-color: #00bcd4;
+  background: linear-gradient(180deg, #00bcd4 50%, #00aec5 55%);
+  border-color: #00a5bb; }
   .alert-info .alert-link {
-    color: #00353b; }
+    color: #e6e6e6; }
 
 .alert-warning {
-  color: #856f00;
-  background-color: #fff7cc;
-  border-color: #fff4b8; }
+  color: #fff;
+  background-color: #ffd600;
+  background: linear-gradient(180deg, #ffd600 50%, #f0c900 55%);
+  border-color: #e6c100; }
   .alert-warning .alert-link {
-    color: #524400; }
+    color: #e6e6e6; }
 
 .alert-danger {
-  color: #7f231c;
-  background-color: #fdd9d7;
-  border-color: #fccac7; }
+  color: #fff;
+  background-color: #f44336;
+  background: linear-gradient(180deg, #f44336 50%, #f33527 55%);
+  border-color: #f32c1e; }
   .alert-danger .alert-link {
-    color: #551713; }
+    color: #e6e6e6; }
 
 .alert-light {
-  color: #818182;
-  background-color: #fefefe;
-  border-color: #fdfdfe; }
+  color: #fff;
+  background-color: #f8f9fa;
+  background: linear-gradient(180deg, #f8f9fa 50%, #eff1f4 55%);
+  border-color: #e9ecef; }
   .alert-light .alert-link {
-    color: #686868; }
+    color: #e6e6e6; }
 
 .alert-dark {
-  color: #1b1e21;
-  background-color: #d6d8d9;
-  border-color: #c6c8ca; }
+  color: #fff;
+  background-color: #343a40;
+  background: linear-gradient(180deg, #343a40 50%, #2d3238 55%);
+  border-color: #292d32; }
   .alert-dark .alert-link {
-    color: #040505; }
+    color: #e6e6e6; }
 
 @keyframes progress-bar-stripes {
   0% {
