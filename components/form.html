@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- google fonts  -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <!-- bootstrap file 5.0.0 alpha 2 -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+  <!-- custom css styling  -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="../assets/css/fontawsome-all.css.css" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div class="warraper mx-auto" style="max-width: 400px">
+    <!-- search bar in header > div.main-header  -->
+
+    <header>
+      <div class="main-header">
+        <!-- <div class="col-lg-6 col-md-12 search-bar"> -->
+        <div class="col-12 search-bar">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" id="categories" type="button" id="dropdownMenuButton"
+                  data-toggle="dropdown" aria-expanded="false">
+                  All
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="categorList">
+                  <li>
+                    <a class="dropdown-item" href="#">Electronic Items</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Fashion</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Medicine & HealthCare</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <input type="text" class="form-control" id="search-query" placeholder="search ..." aria-label="Username"
+              aria-describedby="basic-addon1" />
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-primary">
+                <i class="material-icons">search</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- search bar in header > div.main-header  -->
+
+    <div class="caontainer-fluid">
+      <!-- input with icon input with icon bg wrapped in input group example -->
+      <p>input with icon with icon bg wrapped in input-group</p>
+      <div class="input-group">
+        <div class="inputWithIcon inputIconBg">
+          <input type="text" class="form-control" placeholder="Enter Your Usename" aria-label="Username"
+            aria-describedby="basic-addon1" />
+          <i class="material-icons">account_circle</i>
+        </div>
+      </div>
+      <!-- input with icon input with icon bg wrapped in input group example -->
+      <br />
+
+      <!-- input with icon input with icon bg  example -->
+      <p>input with icon with icon bg not-wrapped in input-group</p>
+      <div class="inputWithIcon inputIconBg">
+        <input type="text" class="form-control" placeholder="Enter Your E-mail Address" aria-label="email"
+          aria-describedby="basic-addon1" />
+        <i class="material-icons">mail_outline</i>
+      </div>
+      <!-- input with icon input with icon bg  example -->
+      <br />
+      <!-- input with icon input with icon input with action with iconbg wrapped in input group example -->
+      <p>input with icon with icon with action btn with iconbg</p>
+      <div class="inputWithIcon inputWithAction inputIconBg">
+        <input type="password" class="form-control" placeholder="Enter Password" aria-label="Password" id="password"
+          aria-describedby="basic-addon1" />
+        <i class="material-icons">lock_outline</i>
+        <i class="fa fa-eye-slash action" id="eye"></i>
+      </div>
+      <!-- input with icon input with icon bg wrapped in input group example -->
+      <br />
+
+      <br />
+      <!-- input with icon input with icon input without iconbg example -->
+      <p>input with icon with-out icon bg</p>
+      <div class="inputWithIcon">
+        <input type="text" class="form-control" placeholder="Enter Your UserName" aria-label="Username"
+          aria-describedby="basic-addon1" />
+        <i class="material-icons">account_circle</i>
+      </div>
+      <!-- input with icon input with icon bg wrapped in input group example -->
+
+      <br />
+      <!-- input with icon input with icon input with action btn input without iconbg example -->
+      <p>input with icon with-out icon bg</p>
+      <div class="inputWithIcon inputWithAction">
+        <input type="text" class="form-control" placeholder="Enter Your Password" aria-label="Password"
+          aria-describedby="basic-addon1" />
+
+        <i class="material-icons">lock_outline</i>
+        <i class="material-icons action">check</i>
+      </div>
+      <!-- input with icon input with icon bg wrapped in input group example -->
+
+      <br />
+    </div>
+
+    <!-- DORP DOWNM MED8 FOR USER WIDGET -->
+    <div class="dropdown-menu user-widget">
+
+
+      <div class="login" style="width: 200px;margin-left: 10px;margin-right: 10px;">
+
+        <p class="text-muted mb-2 float-center">Welcome To T.J Shoes</p>
+
+        <button type="button" class="btn btn-danger btn-sm btn-block">Sign In</button>
+        <br />
+
+        <p class="text-muted text-center">Use Social Accounts</p>
+
+        <div class="social-line text-center">
+          <a href="login/facebook"
+            class="btn-social btn-outline-facebook btn-social-circle waves-effect waves-light m-1">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="login/google"
+            class="btn-social btn-outline-google-plus btn-social-circle waves-effect waves-light m-1"><i
+              class="fab fa-google-plus-g"></i></a>
+          <a href="login/instagram"
+            class="btn-social btn-outline-instagram waves-effect btn-social-circle waves-light m-1"><i
+              class="fab fa-instagram"></i></a>
+
+
+        </div>
+        <br />
+
+        <p class="text-muted mb-2 text-left">New customer ?</p>
+
+        <button type="button" class="btn btn-danger btn-sm btn-block">Register </button>
+
+
+
+      </div>
+
+      <div class="dropdown-divider"></div>
+
+      <a class="dropdown-item mx-auto" style="width: 95%!important;" href="#">My Orders</a>
+
+      <a class="dropdown-item mx-auto" style="width: 95%!important;" href="#">My Wish list</a>
+      <a class="dropdown-item mx-auto" style="width: 95%!important;" href="#">My Favorite Items</a>
+    </div>
+    <!-- DROPDOW MENU FOR USER WIDGET ENDS -->
+
+
+
+<div class="alert alert-primary mb-1" role="alert">
+  This is a primary alert—check it out!
+</div>
+
+<div class="alert alert-info mb-1" role="alert">
+  This is a primary alert—check it out!
+</div>
+
+
+<div class="alert alert-success mb-1" role="alert">
+  This is a primary alert—check it out!
+</div>
+
+<div class="alert alert-warning mb-1" role="alert">
+  This is a primary alert—check it out!
+</div>
+
+<div class="alert alert-danger mb-1" role="alert">
+  This is a primary alert—check it out!
+</div>
+
+
+
+<div class="alert alert-rose mb-1" role="alert">
+  This is a primary alert—check it out!
+</div>
+
+<div class="alert alert-dark mb-1" role="alert">
+  This is a primary alert—check it out!
+</div>
+
+
+<button class="btn btn-block btn-primary mb-1">button</button>
+
+<button class="btn btn-block btn-danger mb-1">button</button>
+
+<button class="btn btn-block btn-warning mb-1">button</button>
+
+<button class="btn btn-block btn-danger mb-1">button</button>
+
+<button class="btn btn-block  btn-info mb-1">button</button>
+<button class="btn btn-sm btn-rose mb-1">button</button>
+
+
+
+<div class="conatiner-fluid">
+    <div class="card mb-2">
+      <div class="card-header card-header-primary">
+    <h5 class="title">card title</h5>
+      </div>
+   <div class="card-body">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ex deleniti dicta laborum iusto, expedita officia mollitia pariatur inventore dignissimos numquam aliquid, quae eligendi consequatur saepe autem rerum totam voluptatem.
+   </div>
+    </div>
+
+
+
+
+  <div class="card mb-2">
+    <div class="card-header card-header-info">
+    <h5 class="title">card title</h5>
+    </div>
+    <div class="card-body">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ex deleniti dicta laborum iusto, expedita officia
+      mollitia pariatur inventore dignissimos numquam aliquid, quae eligendi consequatur saepe autem rerum totam
+      voluptatem.
+    </div>
+  </div>
+
+
+
+  <div class="card mb-2">
+    <div class="card-body">
+<h5 class="card-title"><i class="material-icons">lock_outline</i>asas</h5>
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ex deleniti dicta laborum iusto, expedita officia
+      mollitia pariatur inventore dignissimos numquam aliquid, quae eligendi consequatur saepe autem rerum totam
+      voluptatem.
+    </div>
+  </div>
+
+  
+  <div class="card" style="width: 20rem;">
+    <div class="card-header card-header-success">
+     <h5 class="title">card title</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+  </div>
+
+
+</div>
+
+
+
+
+<nav aria-label="Page navigation example mb-2">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+
+
+
+<br />
+
+<div class="card card-nav-tabs card-plain">
+  <div class="card-header card-header-dark">
+    <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+    <div class="nav-tabs-navigation">
+      <div class="nav-tabs-wrapper">
+        <ul class="nav nav-tabs" data-tabs="tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" data-toggle="tab">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#updates" data-toggle="tab">Updates</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#history" data-toggle="tab">History</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="card-body ">
+  <div class="tab-content text-center">
+    <div class="tab-pane active" id="home">
+      <p>I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level
+        that things could be at. So when you get something that has the name Kanye West on it, it&#x2019;s supposed to
+        be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of
+        dollars, because I got the answers. I understand culture. I am the nucleus.</p>
+    </div>
+    <div class="tab-pane" id="updates">
+      <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I
+        understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have, to push possibilities,
+        to show people, this is the level that things could be at. I think that&#x2019;s a responsibility that I have,
+        to push possibilities, to show people, this is the level that things could be at. </p>
+    </div>
+    <div class="tab-pane" id="history">
+      <p> I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the level
+        that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because
+        I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have,
+        to push possibilities, to show people, this is the level that things could be at.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<br />
+<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+
+  <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+  <label class="btn btn-outline-dark" for="btncheck2">Checkbox 2</label>
+
+  <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+  <label class="btn btn-outline-success" for="btncheck3">Checkbox 3</label>
+</div>
+
+
+
+
+
+<br >
+<br />
+<br />
+<div class="bg-primary" style="width: 100%; height: 100px">
+asas</div>
+
+
+
+<br >
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper.js -->
+  <script src="../assets/js/bootstrap/bootstrap.bundle.js" crossorigin="anonymous"></script>
+
+  <script src="../assets/js/custom-script.js"></script>
+</body>
+
+</html>

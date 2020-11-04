@@ -1,0 +1,15 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "sass for using material-dashboard pro  dashboard",
+  "main": "index.js",
+  "scripts": {
+    "compile:bs5": "node-sass sass/bootstrap.scss css/bootstrap.css",
+    "compile:style": "node-sass sass/style.scss css/style.css"
+  },
+  "author": "khalid baloch",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

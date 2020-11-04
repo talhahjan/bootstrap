@@ -1,0 +1,4 @@
+@mixin bg-variant($bg, $color){
+      color: $color;
+@include gradient-bg($bg);
+}

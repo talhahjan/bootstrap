@@ -1,0 +1,50 @@
+/* css variables colors */
+
+
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: var(--bs-primary);
+}
+
+i {
+  // required
+  font-family: 'Material Icons';
+  font-feature-settings: 'liga';
+  font-weight: normal;
+  font-style: normal;
+  font-size:inherit;
+  line-height:inherit;
+  vertical-align: middle;
+  display: inline-block;
+  // resetters
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  // optimizers
+  text-rendering: optimizeLegibility;
+  
+}
+
+
+i + span{
+  line-height:inherit;
+  vertical-align: middle;
+  display: inline-block;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  padding-left: 2px;
+}
