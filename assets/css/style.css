@@ -252,6 +252,9 @@ nav.navbar {
 /* css for main content tag */
 main section {
   padding: 10px 0 10px 0; }
+  main section .card {
+    border: none !important;
+    box-shadow: none; }
 
 main .carousel .carousel-inner {
   border-radius: 6px; }
@@ -340,6 +343,16 @@ main .popular-items .card {
     background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
     box-shadow: 0px 4px 30px rgba(64, 93, 230, 0.5); }
 
+/* css for footer tag */
+#footer {
+  padding: 20px 10px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px; }
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px; }
+
 /* css for animations  */
 /* animation to rotate at 360deg on y axis */
 @keyframes rotation {
@@ -395,8 +408,15 @@ main .popular-items .card {
     transform: scale(1); } }
 
 /* css for responsive  */
-/* responsive css file 
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  #footer .copyright {
+    text-align: left; } }
 
-*/
-/* On screens that are 992px wide or less, the background color is blue */
-/* Extra small devices (phones, 600px and down) */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #footer .copyright {
+    text-align: right; } }
+
+/* Extra large devices (large desktops, 1200px and up) */

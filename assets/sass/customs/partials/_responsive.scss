@@ -1,9 +1,29 @@
-/* responsive css file 
-
-*/
-/* On screens that are 992px wide or less, the background color is blue */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 992px) {
-  .main-header {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+ #footer{
+    .copyright{
+ text-align: left;
+    }
+  } 
+ 
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ #footer{
+    .copyright{
+ text-align: right;
+    }
   }
 }
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+
+}
+ 
