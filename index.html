@@ -21,34 +21,47 @@
   
 
   .owl-carousel{
-    position: relative;
-
+position: relative;
   }
 .owl-carousel img.img-thumbnail{
   height: 250px;
 
 }
-   .next-btn{
-    position: absolute;
-    top: 35%;
-    left:0;
-color: #ccc;
-  }
-
-
-.prev-btn{
-    position: absolute;
-    top: 35%;
-    right:0;
-    color: #ccc;
+   .prev-btn{
+  right: 0;
+ border-radius: 3px 0 0 3px;
 
   }
 
+
+.next-btn{
+ left: 0;
+ border-radius: 0 3px 3px 0;
+
+  }
+.prev-btn,.next-btn{
+cursor: pointer;
+position: absolute;
+top: 40%;
+width: auto;
+margin-top: -22px;
+padding: 8px;
+color: white;
+font-weight: bold;
+font-size: px;
+transition: 0.6s ease;
+user-select: none;
+background-color: rgba(0, 0, 0, 0.5);
+z-index:999;
+}
+.prev-btn:hover,.next-btn:hover{
+  background-color: rgba(0, 0, 0, 0.9);
+}
 </style>
   <title>Hello, world!</title>
 </head>
 <body>
-<div class="container mx-auto">
+<div class="wrapper">
   <!-- header -->
   <header>
     <!-- navbar -->
@@ -283,7 +296,7 @@ color: #ccc;
     <h5 class="card-title">
       Trending Products</h5>
     <!-- Set up your HTML -->
-    <div class="owl-carousel  margin-0 padding-0">
+    <div class="owl-carousel">
       <div><img src="assets/images/15.jpg" class="img-thumbnail" alt=""></div>
       <div> <img src="assets/images/1.jpg" class="img-thumbnail" alt=""></div>
       <div> <img src="assets/images/2.jpg" class="img-thumbnail" alt=""></div>
@@ -348,10 +361,70 @@ color: #ccc;
 
 
 <!-- footer -->
-<footer class="bg-primary" style="min-height: 60px;">
+<footer id="footer" class="bg-primary">
+  <div class="container">
+      <div class="row">
+        <aside class="col-md col-6">
+          <h6 class="title">Brands</h6>
+          <ul class="list-unstyled">
+            <li> <a href="#">Adidas</a></li>
+            <li> <a href="#">Puma</a></li>
+            <li> <a href="#">Reebok</a></li>
+            <li> <a href="#">Nike</a></li>
+          </ul>
+        </aside>
+        <aside class="col-md col-6">
+          <h6 class="title">Company</h6>
+          <ul class="list-unstyled">
+            <li> <a href="#">About us</a></li>
+            <li> <a href="#">Career</a></li>
+            <li> <a href="#">Find a store</a></li>
+            <li> <a href="#">Rules and terms</a></li>
+            <li> <a href="#">Sitemap</a></li>
+          </ul>
+        </aside>
+        <aside class="col-md col-6">
+          <h6 class="title">Help</h6>
+          <ul class="list-unstyled">
+            <li> <a href="#">Contact us</a></li>
+            <li> <a href="#">Money refund</a></li>
+            <li> <a href="#">Order status</a></li>
+            <li> <a href="#">Shipping info</a></li>
+            <li> <a href="#">Open dispute</a></li>
+          </ul>
+        </aside>
+        <aside class="col-md col-6">
+          <h6 class="title">Account</h6>
+          <ul class="list-unstyled">
+            <li> <a href="#"> User Login </a></li>
+            <li> <a href="#"> User register </a></li>
+            <li> <a href="#"> Account Setting </a></li>
+            <li> <a href="#"> My Orders </a></li>
+          </ul>
+        </aside>
+        <aside class="col-md">
+          <h6 class="title">Social</h6>
+          <ul class="list-unstyled">
+            <li><a href="#"> <i class="fab fa-facebook"></i> Facebook </a></li>
+            <li><a href="#"> <i class="fab fa-twitter"></i> Twitter </a></li>
+            <li><a href="#"> <i class="fab fa-instagram"></i> Instagram </a></li>
+            <li><a href="#"> <i class="fab fa-youtube"></i> Youtube </a></li>
+          </ul>
+        </aside>
+      </div> <!-- row.// -->
+<!-- footer-top.// -->
 
+<div class="footer-bottom row">
+     <div class="col-md-12 col-lg-6">
+        <p class="policy">Privacy Policy - Terms of Use - User Information Legal Enquiry Guide</p>
+     </div>
+     <div class="col-md-12 col-lg-6">
+              <p class="copyright"> &copy 2019 Company name, All rights reserved </p>
+
+     </div>
+</div>
+    </div><!-- //container -->
 </footer>
-
 <!-- footer -->
 
 </div>

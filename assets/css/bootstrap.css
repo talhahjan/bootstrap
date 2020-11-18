@@ -3457,7 +3457,8 @@ progress {
   background: #f4511e linear-gradient(180deg, #f56a3f, #f4511e) repeat-x;
   color: white; }
   .bg-primary .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-primary a {
     color: white; }
   .bg-primary a:hover {
@@ -3468,7 +3469,8 @@ progress {
   background: #9c27b0 linear-gradient(180deg, #aa47bb, #9c27b0) repeat-x;
   color: white; }
   .bg-secondary .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-secondary a {
     color: white; }
   .bg-secondary a:hover {
@@ -3479,7 +3481,8 @@ progress {
   background: #4caf50 linear-gradient(180deg, #66ba6a, #4caf50) repeat-x;
   color: white; }
   .bg-success .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-success a {
     color: white; }
   .bg-success a:hover {
@@ -3490,7 +3493,8 @@ progress {
   background: #e91e63 linear-gradient(180deg, #ec3f7a, #e91e63) repeat-x;
   color: white; }
   .bg-rose .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-rose a {
     color: white; }
   .bg-rose a:hover {
@@ -3501,7 +3505,8 @@ progress {
   background: #00bcd4 linear-gradient(180deg, #26c5da, #00bcd4) repeat-x;
   color: white; }
   .bg-info .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-info a {
     color: white; }
   .bg-info a:hover {
@@ -3512,7 +3517,8 @@ progress {
   background: #ffd600 linear-gradient(180deg, #fedb26, #ffd600) repeat-x;
   color: white; }
   .bg-warning .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-warning a {
     color: white; }
   .bg-warning a:hover {
@@ -3523,7 +3529,8 @@ progress {
   background: #f44336 linear-gradient(180deg, #f55e53, #f44336) repeat-x;
   color: white; }
   .bg-danger .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-danger a {
     color: white; }
   .bg-danger a:hover {
@@ -3534,7 +3541,8 @@ progress {
   background: #f8f9fa linear-gradient(180deg, #f8f9fa, #f8f9fa) repeat-x;
   color: white; }
   .bg-light .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-light a {
     color: white; }
   .bg-light a:hover {
@@ -3545,7 +3553,8 @@ progress {
   background: #343a40 linear-gradient(180deg, #52575c, #343a40) repeat-x;
   color: white; }
   .bg-dark .title {
-    font-weight: 600; }
+    font-size: 1.2rem;
+    font-weight: 500; }
   .bg-dark a {
     color: white; }
   .bg-dark a:hover {

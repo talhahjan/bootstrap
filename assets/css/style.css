@@ -1,5 +1,17 @@
 /* css for global styling */
 /* css variables colors */
+.wrapper {
+  margin-right: auto;
+  /* 1 */
+  margin-left: auto;
+  /* 1 */
+  max-width: 960px;
+  /* 2 */
+  padding-right: 10px;
+  /* 3 */
+  padding-left: 10px;
+  /* 3 */ }
+
 * {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
@@ -15,20 +27,9 @@ a:hover {
   color: var(--bs-primary); }
 
 i {
-  font-family: 'Material Icons';
-  font-feature-settings: 'liga';
-  font-weight: normal;
-  font-style: normal;
-  font-size: inherit;
-  line-height: inherit;
+  line-height: 100%;
   vertical-align: middle;
-  display: inline-block;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  text-rendering: optimizeLegibility; }
+  padding-right: 3px; }
 
 i + span {
   line-height: inherit;
@@ -138,29 +139,29 @@ header .departments {
 
 /* css for navbar tag */
 /* navbar-light classes */
-nav.navbar {
+.navbar {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   height: 35px;
   box-sizing: border-box; }
-  nav.navbar .navbar-brand img {
+  .navbar .navbar-brand img {
     width: 100%;
     max-width: 100px;
     height: auto;
     padding-left: 10px; }
-  nav.navbar .navbar-nav .nav-item:not(:first-of-type) {
+  .navbar .navbar-nav .nav-item:not(:first-of-type) {
     border-left: 1px solid #ccc; }
-  nav.navbar .navbar-nav .nav-item {
+  .navbar .navbar-nav .nav-item {
     font-size: 0.7rem; }
-    nav.navbar .navbar-nav .nav-item .dropdown-menu {
+    .navbar .navbar-nav .nav-item .dropdown-menu {
       left: -160px; }
-    nav.navbar .navbar-nav .nav-item .user-widget .login {
+    .navbar .navbar-nav .nav-item .user-widget .login {
       width: 200px;
       margin-left: 10px;
       margin-right: 10px; }
-      nav.navbar .navbar-nav .nav-item .user-widget .login .dropdoown-item {
+      .navbar .navbar-nav .nav-item .user-widget .login .dropdoown-item {
         width: 95%; }
-    nav.navbar .navbar-nav .nav-item .nav-link:hover, nav.navbar .navbar-nav .nav-item.nav-link:active {
+    .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item.nav-link:active {
       color: var(--bs-primary) !important; }
 
 /* css for form */
@@ -261,6 +262,56 @@ main .carousel .carousel-inner {
 
 main .popular-items .card {
   height: 100%; }
+
+/* css for pages */
+.login-page {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/hd-bg.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  color: #fff; }
+  .login-page .navbar {
+    box-shadow: none;
+    height: 60px; }
+    .login-page .navbar .navbar-nav .nav-item {
+      border: 0;
+      display: inline-flex;
+      vertical-align: middle;
+      margin-left: 5px; }
+      .login-page .navbar .navbar-nav .nav-item .nav-link {
+        position: relative;
+        color: #fff;
+        border: 0;
+        margin: 0;
+        border-radius: 3px;
+        line-height: 24px;
+        text-transform: uppercase;
+        font-size: 12px;
+        padding: 10px 15px;
+        background-color: transparent;
+        transition: 0.3s background-color 0s; }
+      .login-page .navbar .navbar-nav .nav-item .nav-link:hover, .login-page .navbar .navbar-nav .nav-item .active, .login-page .navbar .navbar-nav .nav-item:focus {
+        border: 0 !important;
+        color: #fff !important;
+        font-weight: 500;
+        background-color: rgba(255, 255, 255, 0.2);
+        transition: 0.3s background-color 0.2s; }
+  .login-page .wrapper {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.navbar-transparent {
+  background: transparent;
+  border: 0; }
+  .navbar-transparent a, .navbar-transparenta:hover {
+    color: #fff; }
+
+.card-login {
+  width: 400px; }
 
 /* css for main content tag */
 .btn-social {

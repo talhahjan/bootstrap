@@ -1,7 +1,15 @@
 /* css variables colors */
 
 
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
 
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
 * {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
@@ -19,24 +27,9 @@ a:hover {
 }
 
 i {
-  // required
-  font-family: 'Material Icons';
-  font-feature-settings: 'liga';
-  font-weight: normal;
-  font-style: normal;
-  font-size:inherit;
-  line-height:inherit;
-  vertical-align: middle;
-  display: inline-block;
-  // resetters
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  // optimizers
-  text-rendering: optimizeLegibility;
-  
+  line-height: 100%;
+  vertical-align:middle;
+padding-right: 3px;
 }
 
 
