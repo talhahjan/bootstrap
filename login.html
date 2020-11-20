@@ -15,7 +15,11 @@
     <!-- font awesome  -->
     <link rel="stylesheet" href="assets/css/fontawsome-all.css.css" />
 </head>
+<<<<<<< HEAD
 <body class="login-page">
+=======
+<body  class="login-page">
+>>>>>>> c87a034... login page completed
 
 <!-- End Google Tag Manager (noscript) -->
 <!-- Navbar -->
@@ -50,6 +54,7 @@
 </nav>
 <!-- End Navbar -->
 
+<<<<<<< HEAD
 <div class="wrapper">
 <div class="card card-login">
 <div class="card-body">
@@ -92,6 +97,103 @@
 
 </div>
 
+=======
+<div class="page-content">
+
+    <div class="card card-login">
+        <div class="card-header card-header-rose">
+            <h5 class="text-center">Login With Social Account</h5>
+        </div>
+            
+        <div class="card-body">
+                
+                <div class="social-line text-center">
+                    <a href="login/facebook" class="btn-social btn-outline-facebook btn-social-circle waves-effect waves-light m-1">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="login/google" class="btn-social btn-outline-google btn-social-circle waves-effect waves-light m-1"><i
+                            class="fab fa-google-plus-g"></i></a>
+                    <a href="login/instagram" class="btn-social btn-outline-instagram waves-effect btn-social-circle waves-light m-1"><i
+                            class="fab fa-instagram"></i></a>
+                
+                
+                </div>
+                
+                <p class="text-muted text-center mt-2">Or Be Classical</p>
+        
+          <form action="">
+        <div class="inputWithIcon mt-4">
+            <input type="text" class="form-control" placeholder="Enter UserName" aria-label="UserName" id="UserName"
+                aria-describedby="basic-addon1" required />
+            <i class="material-icons">email</i>
+        </div>
+        
+        <div class="inputWithIcon inputWithAction mt-4">
+            <input type="password" class="form-control" placeholder="Enter Password" aria-label="Password" id="password"
+                aria-describedby="basic-addon1"/>
+            <i class="material-icons">lock_outline</i>
+            <i class="fa fa-eye-slash action" id="eye"></i>
+        </div>
+        
+        
+        <div class="row mt-2">
+            <div class="col-sm">
+             <div class="form-check">
+                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                 <label class="form-check-label" for="flexCheckChecked">
+                   Remember me 
+                 </label>
+             </div>
+            </div>
+
+            <div class="col-sm-auto">
+                <a href="#"> Forgot Password ? </a>
+            </div> 
+         </div>
+         
+         
+        
+        
+        
+        
+          <div class="form-group mt-2">
+            <button class="btn btn-block btn-primary" type="submit">Login</button>
+          </div> <!-- form-group// -->
+        
+    
+            </form>
+        
+
+        </div>
+        
+</div>
+<div class="mt-1">
+    <a href="http://localhost/l7ecom/register" class="float-right text-light"> I don&#039;t have an account ? Create one</a>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <div class="row m-1">
+        <div class="col-sm">
+            <p class="policy">Privacy Policy - Terms of Use - User Information Legal Enquiry Guide</p>
+           
+        </div>
+    
+        <div class="col-sm-auto">
+            <p class="copyright"> &copy 2019 Company name, All rights reserved </p>
+      
+        </div> 
+     </div>
+      </footer>
+>>>>>>> c87a034... login page completed
 <!-- Option 1: Bootstrap Bundle with Popper.js -->
 <script src="assets/js/bootstrap/bootstrap.bundle.js" crossorigin="anonymous"></script>
 <!-- Jquery js file -->
@@ -99,5 +201,23 @@
 <!-- jQuery Plugins OwlCarousel  -->
 <script src="assets/js/jquery/plugins/owl.carousel.js"></script>
 <!-- custom es6 script -->
+<<<<<<< HEAD
 <script src="assets/js/custom-script.js"></script>
 </body>
+=======
+<script>
+    const visibilityBtn = document.querySelector("#eye");
+
+    visibilityBtn.addEventListener("click", function () {
+  currentClass=visibilityBtn.classList.contains('fa-eye');
+ 
+visibilityBtn.classList.toggle('fa-eye');
+ visibilityBtn.classList.toggle('fa-eye-slash');
+document.getElementById("password").setAttribute("type", currentClass ? "password": "text");
+  
+});
+
+</script>
+</body>
+</html>
+>>>>>>> c87a034... login page completed

@@ -3311,7 +3311,11 @@ progress {
   margin-left: 1rem; }
 
 .card-header {
+<<<<<<< HEAD
   padding: 0.5rem 1rem;
+=======
+  padding: 15px 15px;
+>>>>>>> c87a034... login page completed
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -3360,7 +3364,11 @@ progress {
 
 .card-header[class*="card-header-"] + *,
 .card-header[class*="card-header-"] ~ * {
+<<<<<<< HEAD
   margin-top: 20px; }
+=======
+  margin-top: 25px; }
+>>>>>>> c87a034... login page completed
 
 .card-footer {
   padding: 0.5rem 1rem;
