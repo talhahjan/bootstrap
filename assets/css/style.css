@@ -263,10 +263,33 @@ main .carousel .carousel-inner {
 main .popular-items .card {
   height: 100%; }
 
+main .card_product {
+  padding: 0.25rem;
+  background-color: #fafafa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto; }
+  main .card_product .product_img {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px red;
+    height: 180px;
+    width: auto; }
+  main .card_product .product_detail {
+    margin: 10px 5px; }
+    main .card_product .product_detail .price {
+      color: grey;
+      font-size: 0.97rem;
+      text-align: center; }
+    main .card_product .product_detail .title {
+      margin: 10px 0;
+      font-size: 1rem;
+      font-weight: 500; }
+
 /* css for pages */
 .login-page {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/hd-bg.jpg");
-  background-size: 100% 100%;
   position: relative;
   color: #fff; }
   .login-page .navbar {
@@ -311,7 +334,8 @@ main .popular-items .card {
 .card-login {
   width: 50%;
   min-width: 350px;
-  max-width: 600px; }
+  max-width: 500px;
+  margin: 0 10px; }
   .card-login .title {
     font-size: 0.8rem; }
 

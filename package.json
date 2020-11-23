@@ -4,8 +4,8 @@
   "description": "sass for using material-dashboard pro  dashboard",
   "main": "index.js",
   "scripts": {
-    "compile:bs5": "node-sass sass/bootstrap.scss css/bootstrap.css",
-    "compile:style": "node-sass sass/style.scss css/style.css"
+    "compile:bs5": "node-sass assets/sass/bootstrap.scss assets/css/bootstrap.css",
+    "compile:style": "node-sass assets/sass/style.scss assets/css/style.css"
   },
   "author": "khalid baloch",
   "license": "ISC",

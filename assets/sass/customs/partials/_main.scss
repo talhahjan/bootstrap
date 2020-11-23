@@ -28,7 +28,38 @@ height: 100%;
 
 }
 
+.card_product{
+  padding: 0.25rem;
+  background-color: #fafafa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto; 
+     .product_img{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-bottom: 1px red;
+height: 180px;
+width: auto;
+}
+.product_detail{
+margin: 10px 5px;
+.price{
+  color: grey;
+  font-size: 0.97rem;
+  text-align: center;
+}
+.title{
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  
+}
+}
 
+
+}
 
 
 }
