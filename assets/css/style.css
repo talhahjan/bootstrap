@@ -151,17 +151,17 @@ header .departments {
     padding-left: 10px; }
   .navbar .navbar-nav .nav-item:not(:first-of-type) {
     border-left: 1px solid #ccc; }
-  .navbar .navbar-nav .nav-item {
+  .navbar .navbar-nav .nav-item, .navbar .navbar-nav .nav-link {
     font-size: 0.7rem; }
-    .navbar .navbar-nav .nav-item .dropdown-menu {
+    .navbar .navbar-nav .nav-item .dropdown-menu, .navbar .navbar-nav .nav-link .dropdown-menu {
       left: -160px; }
-    .navbar .navbar-nav .nav-item .user-widget .login {
+    .navbar .navbar-nav .nav-item .user-widget .login, .navbar .navbar-nav .nav-link .user-widget .login {
       width: 200px;
       margin-left: 10px;
       margin-right: 10px; }
-      .navbar .navbar-nav .nav-item .user-widget .login .dropdoown-item {
+      .navbar .navbar-nav .nav-item .user-widget .login .dropdoown-item, .navbar .navbar-nav .nav-link .user-widget .login .dropdoown-item {
         width: 95%; }
-    .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item.nav-link:active {
+    .navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item.nav-link:active, .navbar .navbar-nav .nav-link .nav-link:hover, .navbar .navbar-nav .nav-link.nav-link:active {
       color: var(--bs-primary) !important; }
 
 /* css for form */
@@ -290,8 +290,8 @@ main .card_product {
 
 /* css for pages */
 .login-page {
-  position: relative;
-  color: #fff; }
+  color: white;
+  height: 100vh; }
   .login-page .navbar {
     box-shadow: none;
     height: 60px; }
@@ -319,11 +319,12 @@ main .card_product {
         background-color: rgba(255, 255, 255, 0.2);
         transition: 0.3s background-color 0.2s; }
   .login-page .page-content {
-    height: 100vh;
-    width: 100vw;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    /* or inline-flex */
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%; }
 
 .navbar-transparent {
   background: transparent;
@@ -332,18 +333,16 @@ main .card_product {
     color: #fff; }
 
 .card-login {
-  width: 50%;
-  min-width: 350px;
-  max-width: 500px;
-  margin: 0 10px; }
+  width: 100%;
+  max-width: 350px;
+  flex-shrink: 3;
+  /* default 1 */
+  align-self: center; }
   .card-login .title {
     font-size: 0.8rem; }
 
 .footer {
-  position: fixed;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  margin-top: 20px;
   width: 100%; }
 
 /* css for main content tag */
