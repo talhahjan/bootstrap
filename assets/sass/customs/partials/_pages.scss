@@ -62,7 +62,7 @@ width: 100%;
 
  .card-login{
  width: 100%;
- max-width: 500px;
+ max-width: 300px;
     flex-shrink: 3; /* default 1 */
      align-self: center;
 
@@ -77,19 +77,3 @@ width: 100%;
      margin-top: 20px;
 width: 100%; }
 
-
-
-
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-  .card-login{
-      max-width: 500px;
-  }
-  }
-  
-  /* On screens that are 600px or less, set the background color to olive */
-  @media screen and (max-width: 600px) {
-    .card-login{
-        max-width: 350px;
-    }
-  }

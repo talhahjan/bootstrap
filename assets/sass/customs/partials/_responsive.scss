@@ -1,29 +1,50 @@
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
- 
-}
- 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
- #footer{
-    .copyright{
- text-align: left;
-    }
-  } 
- 
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
- #footer{
-    .copyright{
- text-align: right;
-    }
-  }
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
 
-}
- 
+
+
+
+
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+   .card-login{
+      max-width: 300px;;
+   }
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+   #footer{
+      .copyright{
+   text-align: left;
+      }
+    } 
+
+    .card-login{
+       max-width: 400px;
+    }
+  
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+   #footer{
+      .copyright{
+   text-align: right;
+      }
+    }
+  
+    .card-login{
+      max-width: 500px;;
+   }
+
+
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { }

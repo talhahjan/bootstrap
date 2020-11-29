@@ -334,7 +334,7 @@ main .card_product {
 
 .card-login {
   width: 100%;
-  max-width: 500px;
+  max-width: 300px;
   flex-shrink: 3;
   /* default 1 */
   align-self: center; }
@@ -344,16 +344,6 @@ main .card_product {
 .footer {
   margin-top: 20px;
   width: 100%; }
-
-/* On screens that are 992px or less, set the background color to blue */
-@media screen and (max-width: 992px) {
-  .card-login {
-    max-width: 500px; } }
-
-/* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
-  .card-login {
-    max-width: 350px; } }
 
 /* css for main content tag */
 .btn-social {
@@ -501,15 +491,18 @@ main .card_product {
     transform: scale(1); } }
 
 /* css for responsive  */
-/* Small devices (landscape phones, 576px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 576px) {
+  .card-login {
+    max-width: 300px; } }
+
 @media (min-width: 768px) {
   #footer .copyright {
-    text-align: left; } }
+    text-align: left; }
+  .card-login {
+    max-width: 400px; } }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #footer .copyright {
-    text-align: right; } }
-
-/* Extra large devices (large desktops, 1200px and up) */
+    text-align: right; }
+  .card-login {
+    max-width: 500px; } }
