@@ -77,3 +77,42 @@ width: 100%;
      margin-top: 20px;
 width: 100%; }
 
+
+
+.page-product-listing{
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+min-height: 100vh;
+main{
+    flex-shrink: 3; /* default 1 */
+
+
+.filter{
+    .card{
+        box-shadow: none;
+        margin: 4px;
+        .card-header{
+            margin: 4px;
+            padding: 4px;
+            box-shadow: none;
+            background-color: #fff;
+            border: none;
+            i{
+                cursor: pointer;
+            }
+           
+        }
+
+        ul{
+            list-style: none;
+        }
+    }
+}
+
+}
+
+
+}
+
+

@@ -345,6 +345,28 @@ main .card_product {
   margin-top: 20px;
   width: 100%; }
 
+.page-product-listing {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; }
+  .page-product-listing main {
+    flex-shrink: 3;
+    /* default 1 */ }
+    .page-product-listing main .filter .card {
+      box-shadow: none;
+      margin: 4px; }
+      .page-product-listing main .filter .card .card-header {
+        margin: 4px;
+        padding: 4px;
+        box-shadow: none;
+        background-color: #fff;
+        border: none; }
+        .page-product-listing main .filter .card .card-header i {
+          cursor: pointer; }
+      .page-product-listing main .filter .card ul {
+        list-style: none; }
+
 /* css for main content tag */
 .btn-social {
   display: inline-flex;
