@@ -1,3 +1,4 @@
+/* login register page css start */
 .login-page{
     color: white;
     height: 100vh;
@@ -78,7 +79,7 @@ width: 100%;
 width: 100%; }
 
 
-
+/* product page css start */
 .page-product-listing{
     display: flex;
     flex-direction: column;
@@ -98,6 +99,12 @@ main{
             box-shadow: none;
             background-color: #fff;
             border: none;
+            user-select: none;
+            .title{
+                color: var(--bs-primary);
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
             i{
                 cursor: pointer;
             }
@@ -106,6 +113,9 @@ main{
 
         ul{
             list-style: none;
+            li{
+/*                 margin: 4px 0; */
+            }
         }
     }
 }

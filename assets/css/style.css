@@ -277,18 +277,25 @@ main .card_product {
     border-bottom: 1px red;
     height: 180px;
     width: auto; }
+  main .card_product .btn-fav {
+    position: absolute;
+    top: 0;
+    right: 5px; }
   main .card_product .product_detail {
     margin: 10px 5px; }
     main .card_product .product_detail .price {
       color: grey;
       font-size: 0.97rem;
-      text-align: center; }
+      text-align: center;
+      display: flex;
+      justify-content: space-between; }
     main .card_product .product_detail .title {
       margin: 10px 0;
       font-size: 1rem;
       font-weight: 500; }
 
 /* css for pages */
+/* login register page css start */
 .login-page {
   color: white;
   height: 100vh; }
@@ -345,6 +352,7 @@ main .card_product {
   margin-top: 20px;
   width: 100%; }
 
+/* product page css start */
 .page-product-listing {
   display: flex;
   flex-direction: column;
@@ -361,11 +369,18 @@ main .card_product {
         padding: 4px;
         box-shadow: none;
         background-color: #fff;
-        border: none; }
+        border: none;
+        user-select: none; }
+        .page-product-listing main .filter .card .card-header .title {
+          color: var(--bs-primary);
+          font-size: 1.1rem;
+          font-weight: 600; }
         .page-product-listing main .filter .card .card-header i {
           cursor: pointer; }
       .page-product-listing main .filter .card ul {
         list-style: none; }
+        .page-product-listing main .filter .card ul li {
+          /*                 margin: 4px 0; */ }
 
 /* css for main content tag */
 .btn-social {
