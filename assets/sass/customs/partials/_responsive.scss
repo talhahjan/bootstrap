@@ -11,7 +11,6 @@
    .card-login{
       max-width: 300px;;
    }
-
  }
 
 // Medium devices (tablets, 768px and up)
@@ -25,7 +24,13 @@
     .card-login{
        max-width: 400px;
     }
-  
+        
+    
+
+#filter::after{
+   content: " & refine";
+
+}
  }
 
 // Large devices (desktops, 992px and up)
@@ -39,6 +44,10 @@
     .card-login{
       max-width: 500px;;
    }
+.filter{
+   width: 250px;
+}
+
 
 
  }

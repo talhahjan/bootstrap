@@ -27,7 +27,7 @@
   <header>
     <!-- navbar -->
     <nav class="navbar navbar-expand position-absolut">
-      <div class="container">
+      <div class="container-fluid">
 
 <i class="fa fa-bars"></i>
 
@@ -133,7 +133,7 @@
             </div>
       </section>
 
-<div class="container-fluid departments">
+<div class="container departments">
 <div class="content-wrapper">
   <div><a href="#">Man</a></div>
   <div><a href="#">Women</a></div>
@@ -149,15 +149,41 @@
 <!-- main content area start -->
 
 <main class="product-listing">
+<div class="container">
+  <div class="row">
 
-<div class="row d-flex justify-content-between">
-  <div class="col my-1">
-    <span class="filter-btn">
-      <button class="btn btn-outline-primary btn-sm" id="filter"> 
-        <i class="material-icons">tune</i><span>Filter</span>
-      </button>
-      </span>
-    
+
+<div class="d-flex justify-content-between pt-2">
+  <span class="filter-btn">
+  <button class="btn btn-outline-primary btn-sm btn-block" id="filter"> 
+    <i class="material-icons">tune</i><span>Filter</span>
+  </button>
+  </span>
+  <span class="d-lg-flex d-none">
+    <div class="btn-group" role="group" aria-label="Basic example">
+     <button class="btn btn-outline-primary btn-sm">Trending</button>
+     <button class="btn btn-outline-primary btn-sm">Latest</button>
+     <button class="btn btn-outline-primary btn-sm">Popular</button>
+     <button class="btn btn-outline-primary btn-sm">featured</button>
+    </div>
+  </span>
+<span class="d-flex d-lg-none">
+
+  <select name="sort" id="" class="form-select form-selec-sm">
+    <option value="">Trending</option>
+    <option value="">latest</option>
+    <option value="">Popular</option>
+    <option value="">featured</option>
+  </select>
+
+</span>
+
+</div>
+
+
+
+
+    <div class="col-lg-auto">
       <div class="filter">
 
         <div class="expandableCollapsibleDiv card">
@@ -271,18 +297,8 @@
 
 
   </div>
-
-
-  </div>
-
-  <div class="col my-1">
-    <div class="btn-group">
-      <button class="btn btn-outline-primary btn-sm">Trending</button>
-      <button class="btn btn-outline-primary btn-sm">Latest</button>
-      <button class="btn btn-outline-primary btn-sm">Popular</button>
-      <button class="btn btn-outline-primary btn-sm">featured</button>
-     </div>
- 
+    </div>
+    <div class="col-lg products">listing</div>
   </div>
 </div>
 
@@ -427,8 +443,13 @@
     //iniliaze trending product slider 
     initSlider('#slider-trending');
 
+    const  btnFilter =document.getElementById('filter');
+
+    const container=document.querySelector('.filter');
 
     $(document).ready(function () {
+
+
     $(".expandableCollapsibleDiv").find('i').click(function (e) {
       var showElementDescription = 
         $(this).parents(".expandableCollapsibleDiv").find("ul");
@@ -443,24 +464,20 @@
     });
   });
 
- const  btnFilter =document.getElementById('filter');
 
 btnFilter.addEventListener("click", function(){
 
-let container=document.querySelector('.filter');
 let currentIcon=btnFilter.firstElementChild.innerHTML;
-console.log(currentIcon);
 
 if(currentIcon=='close'){
   btnFilter.firstElementChild.innerText='tune';
-  container.classList.add('d-none');
-    container.classList.remove('d-block');
+  container.style.display='none';
   }
 
   else{
     btnFilter.firstElementChild.innerText='close';
-    container.classList.remove('d-none');
-    container.classList.add('d-block');
+    container.style.display='block';
+
   }
 
 

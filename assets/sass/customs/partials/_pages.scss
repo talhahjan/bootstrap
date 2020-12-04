@@ -84,16 +84,32 @@ width: 100%; }
     display: flex;
     flex-direction: column;
 justify-content: space-between;
-min-height: 100vh;
 main{
     flex-shrink: 3; /* default 1 */
+    .filter{
+        display: none;
 
-
+    }
+    #filter i{
+        font-size: 0.9rem;
+        cursor: pointer;
+        margin:0;
+        padding:0;
+    }
+    #filter span{
+        font-size: 0.9rem;
+    }
+ .products{
+width: 100%;
+}   
+    
 .filter{
+min-width:250px;
     .card{
         box-shadow: none;
-        margin: 4px;
-        .card-header{
+margin: 4px 0 4px 0; /* top right bottom left  */
+
+.card-header{
             margin: 4px;
             padding: 4px;
             box-shadow: none;
@@ -113,9 +129,9 @@ main{
 
         ul{
             list-style: none;
-            li{
-/*                 margin: 4px 0; */
-            }
+           /*  li{
+                margin: 4px 0; 
+            }*/
         }
     }
 }
