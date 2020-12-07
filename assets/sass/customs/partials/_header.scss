@@ -5,8 +5,8 @@
 
 header {
   .main-header {
-    height: 60px;
     
+    margin: 20px 20px;
     .search-bar {
 @include centralize;
       .search-cate {
@@ -60,6 +60,7 @@ header {
 
   }
   .departments {
+    
     box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 15px -3px,
       rgba(0, 0, 0, 0.05) 10px 4px 6px -2px;
     height: 35px;

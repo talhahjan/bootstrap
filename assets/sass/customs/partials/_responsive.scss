@@ -28,14 +28,19 @@
     
 
 #filter::after{
-   content: " & refine";
+   content: " & Refine";
 
+}
+
+.filter{
+   width: 100%;
 }
  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
    #footer{
+   
       .copyright{
    text-align: right;
       }
@@ -45,7 +50,7 @@
       max-width: 500px;;
    }
 .filter{
-   width: 250px;
+   width: 200px;
 }
 
 
