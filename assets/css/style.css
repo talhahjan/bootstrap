@@ -164,6 +164,40 @@ header .departments {
         color: var(--bs-primary) !important; }
 
 /*close navbar  */
+/* css for owl Carousel Product slider */
+#slider-best-seller {
+  position: relative; }
+
+.owl-carousel img.img-thumbnail {
+  height: 250px; }
+
+.prev-btn {
+  right: 0;
+  border-radius: 3px 0 0 3px; }
+
+.next-btn {
+  left: 0;
+  border-radius: 0 3px 3px 0; }
+
+.prev-btn, .next-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: -22px;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  user-select: none; }
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9); }
+
 /* css for form */
 ::placeholder {
   font-family: "Roboto slab", sans-serif;
@@ -344,13 +378,18 @@ main .carousel-inner {
   max-width: 300px;
   flex-shrink: 3;
   /* default 1 */
-  align-self: center; }
+  align-self: center;
+  display: none;
+  /* for animate we use jquery fadein in script tag */ }
   .card-login .title {
     font-size: 0.8rem; }
 
 .footer {
   margin-top: 20px;
   width: 100%; }
+
+.result-detail {
+  font-weight: 600; }
 
 /* product page css start */
 .page-product-listing {
